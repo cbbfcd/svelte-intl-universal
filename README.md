@@ -86,17 +86,6 @@ export let title = 'Some Title'
 <div>
 ```
 
-### Default Message
-
-When the specific key does't exist in current locale, you may want to make it return a default message.
-
-```js
-intl.get(key: string, vars: IObject, defaultMsg: string = '')
-
-// or you can just ignore the vars
-intl.get(key: string, defaultMsg: string = '')
-```
-
 ### Message With Variables
 
 > more advanced details in [intl-messageformat](https://formatjs.io/docs/intl-messageformat)
@@ -127,6 +116,17 @@ export default ({
 })
 
 <h1>{intl.get('price', { price: 100 })}</h1> // The price is: €100.00
+```
+
+### Default Message
+
+When the specific key does't exist in current locale, you may want to make it return a default message.
+
+```js
+intl.get(key: string, vars: IObject, defaultMsg: string = '')
+
+// or you can just ignore the vars
+intl.get(key: string, defaultMsg: string = '')
 ```
 
 ## Online DEMO
