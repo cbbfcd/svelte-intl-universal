@@ -1,0 +1,11 @@
+node_modules
+.vscode
+.idea
+.DS_Store
+dist
+*.local
+lerna-debug.json
+lerna-debug.log
+yarn-error.log
+storybook-static
+coverage/
