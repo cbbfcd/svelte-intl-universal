@@ -10,6 +10,20 @@
   "engines": {
     "node": ">=12"
   },
+  "keywords": [
+    "svelte",
+    "intl",
+    "i18n",
+    "universal",
+    "internationalization",
+    "locale",
+    "localization",
+    "globalization",
+    "format",
+    "translate",
+    "plural",
+    "icu"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -39,11 +53,11 @@
   "size-limit": [
     {
       "path": "dist/svelte-intl-universal.cjs.production.min.js",
-      "limit": "30 KB"
+      "limit": "20 KB"
     },
     {
       "path": "dist/svelte-intl-universal.esm.js",
-      "limit": "30 KB"
+      "limit": "20 KB"
     }
   ],
   "devDependencies": {

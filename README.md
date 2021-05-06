@@ -1,6 +1,6 @@
 # svelte-intl-universal
 
-![npm](https://img.shields.io/npm/dw/svelte-intl-universal)![npm bundle size](https://img.shields.io/bundlephobia/minzip/svelte-intl-universal)![NPM](https://img.shields.io/npm/l/svelte-intl-universal)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/svelte-intl-universal)![npm](https://img.shields.io/npm/v/svelte-intl-universal)
 
 
 > `svelte-intl-universal` is benefit and modified from [react-intl-universal](https://github.com/alibaba/react-intl-universal) and provides the simplest operation to support svelte application to achieve internationalization (not only svelte application can be used)
