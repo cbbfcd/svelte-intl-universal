@@ -1,3 +1,3 @@
-export default ({
-  "MORE": "More data"
-})
+export default {
+  MORE: 'More data',
+};

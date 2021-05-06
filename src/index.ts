@@ -1,3 +1,3 @@
-import SvelteIntlUniversal from './svelte-intl-universal'
+import SvelteIntlUniversal from './svelte-intl-universal';
 
-export default new SvelteIntlUniversal()
+export default new SvelteIntlUniversal();
