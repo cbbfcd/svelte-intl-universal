@@ -2,6 +2,8 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/svelte-intl-universal)![npm](https://img.shields.io/npm/v/svelte-intl-universal)
 
+**The simplest internationalization solution for svelte(or others.)**
+
 
 > `svelte-intl-universal` is benefit and modified from [react-intl-universal](https://github.com/alibaba/react-intl-universal) and provides the simplest operation to support svelte application to achieve internationalization (not only svelte application can be used)
 
@@ -131,8 +133,7 @@ intl.get(key: string, defaultMsg: string = '')
 
 ## Online DEMO
 
-todo
-
+[simple demo 01](https://codesandbox.io/s/hardcore-morse-71w94?file=/App.svelte:472-520)
 
 ## License
 
