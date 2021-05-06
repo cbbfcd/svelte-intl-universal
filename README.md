@@ -69,7 +69,7 @@ onMount(() => {
 
 ### Html string
 
-Thanks to svelte’s @html design, we can directly use it like this
+Thanks to svelte’s `@html` design, we can directly use it like this
 
 ```js
 // en-US.js
@@ -84,7 +84,7 @@ export let title = 'Some Title'
 </script>
 
 <div class='title'>
-  {@html intl.get('title'), { title }}
+  {@html intl.get('title', { title })}
 <div>
 ```
 
