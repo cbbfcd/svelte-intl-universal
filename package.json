@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -60,6 +60,10 @@
       "limit": "20 KB"
     }
   ],
+  "homepage": "https://github.com/cbbfcd/svelte-intl-universal",
+  "bugs": {
+    "url": "https://github.com/cbbfcd/svelte-intl-universal/issues"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.2",
     "@types/escape-html": "^1.0.1",
