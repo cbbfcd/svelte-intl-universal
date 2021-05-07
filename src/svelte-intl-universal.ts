@@ -32,30 +32,26 @@ export default class SvelteIntlUniversal {
     invariant(key, '[svelte-intl-universal] key is required.');
 
     if (arguments.length === 2 && typeof variables === 'string') {
-      let temp = variables;
+      fallback = variables;
       variables = void 0;
-      fallback = temp;
     }
 
     const {
       locales = {},
       currentLocale = '',
-      fallbackLocale,
+      fallbackLocale = '',
       escapeHtml,
       formats,
       options,
     } = this.options;
 
-    if (!locales[currentLocale]) {
+    if (!fallbackLocale && !locales[currentLocale]) {
       return fallback;
     }
 
-    let msg: string = get(locales[currentLocale], key);
+    let msg: string = get(locales[currentLocale], key) ?? get(locales[fallbackLocale], key);
     if (msg == null) {
-      msg = fallbackLocale ? get(locales[fallbackLocale], key) : null;
-      if (msg == null) {
-        return fallback;
-      }
+      return fallback;
     }
 
     if (variables && escapeHtml) {
@@ -68,9 +64,8 @@ export default class SvelteIntlUniversal {
           val.indexOf('<') >= 0
         ) {
           val = escape(val);
+          (variables as IObject)[key] = val
         }
-
-        (variables as IObject)![key] = val;
       });
     }
 
