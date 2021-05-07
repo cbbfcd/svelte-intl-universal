@@ -64,7 +64,7 @@ export default class SvelteIntlUniversal {
           val.indexOf('<') >= 0
         ) {
           val = escape(val);
-          (variables as IObject)[key] = val
+          (variables as IObject)[key] = val;
         }
       });
     }

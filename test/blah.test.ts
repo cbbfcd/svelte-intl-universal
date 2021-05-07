@@ -192,4 +192,20 @@ describe('blah...', () => {
       'this is default msg'
     );
   });
+
+  test("HTML Message without variables", () => {
+    intl.init({ locales, currentLocale: "en-US" });
+    const str = intl.get("TIP");
+    expect(str).toBe(
+      "This is <span>HTML</span>"
+    );
+  });
+
+  test("HTML Message with variables", () => {
+    intl.init({ locales, currentLocale: "en-US" });
+    const str = intl.get("TIP_VAR", { message: "your message" });
+    expect(str).toBe(
+      "This is<span>your message</span>"
+    );
+  });
 });

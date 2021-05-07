@@ -74,7 +74,7 @@ Thanks to svelte’s `@html` design, we can directly use it like this
 ```js
 // en-US.js
 export default ({
-  title: '<h1>{title}</h1>'
+  title: "'<h1>'{title}'</h1>'"
 })
 
 // some-component.svelte
@@ -87,6 +87,8 @@ export let title = 'Some Title'
   {@html intl.get('title', { title })}
 <div>
 ```
+
+**NOTICE**: `"'<h1>'{title}'</h1>'"` the `<h1>` tag was wrapped by apostrophe，more in [intl-messageformate](https://formatjs.io/docs/intl-messageformat/#formatvalues-method)
 
 ### Message With Variables
 
